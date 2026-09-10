@@ -4,9 +4,18 @@ window.FORM_CONFIG = {
   "product": "ohmydarling",
   "sourceForm": "darling.html",
   "context": "stealth guessing game & proposal",
-  "motif": "?",
+  "motif": "💌",
   "media": "5 foto + 1 file musik MP3",
   "theme": "darling",
+  "price": 7000,
+  "palette": [
+    "#FFF8F0",
+    "#FFE4D6",
+    "#FFAAA6",
+    "#FF8B94",
+    "#FF6B6B",
+    "#4A4A4A"
+  ],
   "sections": [
     {
       "id": "02",
@@ -15,37 +24,37 @@ window.FORM_CONFIG = {
         {
           "key": "sender_name",
           "label": "sender full name (yang nembak / menyatakan perasaan)",
-          "placeholder": "isi sender full name (yang nembak / menyatakan perasaan) sesuai pesanan",
+          "placeholder": "Samuel Cliff",
           "long": false,
-          "required": false
+          "required": true
         },
         {
           "key": "sender_first",
           "label": "sender nickname / first name",
-          "placeholder": "isi sender nickname / first name sesuai pesanan",
+          "placeholder": "Samuel",
           "long": false,
-          "required": false
+          "required": true
         },
         {
           "key": "recipient_name",
           "label": "recipient full name (crush yang mau ditembak)",
-          "placeholder": "isi recipient full name (crush yang mau ditembak) sesuai pesanan",
+          "placeholder": "Yose Earthine",
           "long": false,
-          "required": false
+          "required": true
         },
         {
           "key": "recipient_first",
           "label": "recipient nickname / first name",
-          "placeholder": "isi recipient nickname / first name sesuai pesanan",
+          "placeholder": "Yose",
           "long": false,
-          "required": false
+          "required": true
         },
         {
           "key": "chat_destination",
           "label": "chat destination link (link telegrammu agar jawaban crush otomatis terkirim)",
-          "placeholder": "isi chat destination link (link telegrammu agar jawaban crush otomatis terkirim) sesuai pesanan",
+          "placeholder": "https://t.me/mirssy",
           "long": false,
-          "required": false
+          "required": true
         }
       ]
     },
@@ -56,65 +65,65 @@ window.FORM_CONFIG = {
         {
           "key": "s1_badge",
           "label": "top pill badge",
-          "placeholder": "isi top pill badge sesuai pesanan",
+          "placeholder": "for yose earthine",
           "long": false,
-          "required": false
+          "required": true
         },
         {
           "key": "s1_meta",
           "label": "top right label (disamarkan jadi kuis santai)",
-          "placeholder": "isi top right label (disamarkan jadi kuis santai) sesuai pesanan",
+          "placeholder": "a small guessing game",
           "long": false,
-          "required": false
+          "required": true
         },
         {
           "key": "s1_row1",
           "label": "headline baris 1 (rata kiri)",
-          "placeholder": "isi headline baris 1 (rata kiri) sesuai pesanan",
+          "placeholder": "i bet you",
           "long": false,
-          "required": false
+          "required": true
         },
         {
           "key": "s1_row2",
           "label": "headline baris 2 (tengah offset)",
-          "placeholder": "isi headline baris 2 (tengah offset) sesuai pesanan",
+          "placeholder": "didn't see this",
           "long": false,
-          "required": false
+          "required": true
         },
         {
           "key": "s1_row3",
           "label": "headline baris 3 (aksen kanan)",
-          "placeholder": "isi headline baris 3 (aksen kanan) sesuai pesanan",
+          "placeholder": "coming.",
           "long": false,
-          "required": false
+          "required": true
         },
         {
           "key": "s1_lead",
           "label": "opening note kalimat 1",
-          "placeholder": "isi opening note kalimat 1 sesuai pesanan",
           "long": true,
-          "required": false
+          "placeholder": "i put together a little guessing game for you tonight.",
+          "required": true
         },
         {
           "key": "s1_sub",
           "label": "opening note kalimat 2",
-          "placeholder": "isi opening note kalimat 2 sesuai pesanan",
           "long": true,
-          "required": false
+          "placeholder": "answer three quick questions and let's see how many you get right. ready?",
+          "required": true
         },
         {
           "key": "s1_btn",
           "label": "start button label",
-          "placeholder": "isi start button label sesuai pesanan",
+          "placeholder": "okay, ask me",
           "long": false,
-          "required": false
+          "required": true
         },
         {
           "key": "s1_signature",
           "label": "opening signature",
-          "placeholder": "isi opening signature sesuai pesanan",
+          "placeholder": "from samuel cliff",
           "long": false,
-          "required": false
+          "required": true
         }
       ]
     },
@@ -125,58 +134,58 @@ window.FORM_CONFIG = {
         {
           "key": "s2_title",
           "label": "pertanyaan 1",
-          "placeholder": "isi pertanyaan 1 sesuai pesanan",
+          "placeholder": "who do you think has been thinking about you lately?",
           "long": false,
-          "required": false
+          "required": true
         },
         {
           "key": "s2_opt1",
           "label": "pilihan opsi A",
-          "placeholder": "isi pilihan opsi a sesuai pesanan",
+          "placeholder": "your best friend",
           "long": false,
-          "required": false
+          "required": true
         },
         {
           "key": "s2_resp1",
           "label": "balasan jika pilih A",
-          "placeholder": "isi balasan jika pilih a sesuai pesanan",
           "long": true,
-          "required": false
+          "placeholder": "good guess, but not quite. try someone a little closer to you right now.",
+          "required": true
         },
         {
           "key": "s2_opt2",
           "label": "pilihan opsi B",
-          "placeholder": "isi pilihan opsi b sesuai pesanan",
+          "placeholder": "someone you know",
           "long": false,
-          "required": false
+          "required": true
         },
         {
           "key": "s2_resp2",
           "label": "balasan jika pilih B",
-          "placeholder": "isi balasan jika pilih b sesuai pesanan",
           "long": true,
-          "required": false
+          "placeholder": "technically true. you're definitely getting warmer.",
+          "required": true
         },
         {
           "key": "s2_opt3",
           "label": "pilihan opsi C",
-          "placeholder": "isi pilihan opsi c sesuai pesanan",
+          "placeholder": "your secret admirer",
           "long": false,
-          "required": false
+          "required": true
         },
         {
           "key": "s2_resp3",
           "label": "balasan jika pilih C",
-          "placeholder": "isi balasan jika pilih c sesuai pesanan",
           "long": true,
-          "required": false
+          "placeholder": "secret? maybe not for much longer. keep that thought in mind.",
+          "required": true
         },
         {
           "key": "s2_btn",
           "label": "button next question",
-          "placeholder": "isi button next question sesuai pesanan",
+          "placeholder": "next question",
           "long": false,
-          "required": false
+          "required": true
         }
       ]
     },
@@ -187,58 +196,58 @@ window.FORM_CONFIG = {
         {
           "key": "s3_title",
           "label": "pertanyaan 2",
-          "placeholder": "isi pertanyaan 2 sesuai pesanan",
+          "placeholder": "what do you think i've been wanting to do lately?",
           "long": false,
-          "required": false
+          "required": true
         },
         {
           "key": "s3_opt1",
           "label": "pilihan opsi A",
-          "placeholder": "isi pilihan opsi a sesuai pesanan",
+          "placeholder": "talk to you",
           "long": false,
-          "required": false
+          "required": true
         },
         {
           "key": "s3_resp1",
           "label": "balasan jika pilih A",
-          "placeholder": "isi balasan jika pilih a sesuai pesanan",
           "long": true,
-          "required": false
+          "placeholder": "close. i always want to talk to you. but that's not the whole thing.",
+          "required": true
         },
         {
           "key": "s3_opt2",
           "label": "pilihan opsi B",
-          "placeholder": "isi pilihan opsi b sesuai pesanan",
+          "placeholder": "see you",
           "long": false,
-          "required": false
+          "required": true
         },
         {
           "key": "s3_resp2",
           "label": "balasan jika pilih B",
-          "placeholder": "isi balasan jika pilih b sesuai pesanan",
           "long": true,
-          "required": false
+          "placeholder": "very close, actually. but there's something bigger.",
+          "required": true
         },
         {
           "key": "s3_opt3",
           "label": "pilihan opsi C",
-          "placeholder": "isi pilihan opsi c sesuai pesanan",
+          "placeholder": "tell you something",
           "long": false,
-          "required": false
+          "required": true
         },
         {
           "key": "s3_resp3",
           "label": "balasan jika pilih C",
-          "placeholder": "isi balasan jika pilih c sesuai pesanan",
           "long": true,
-          "required": false
+          "placeholder": "spot on. and i've been holding it in for quite a while.",
+          "required": true
         },
         {
           "key": "s3_btn",
           "label": "button next question",
-          "placeholder": "isi button next question sesuai pesanan",
+          "placeholder": "one more",
           "long": false,
-          "required": false
+          "required": true
         }
       ]
     },
@@ -249,58 +258,58 @@ window.FORM_CONFIG = {
         {
           "key": "s4_title",
           "label": "pertanyaan 3 (mulai sadar)",
-          "placeholder": "isi pertanyaan 3 (mulai sadar) sesuai pesanan",
+          "placeholder": "who do you think this whole thing is about?",
           "long": false,
-          "required": false
+          "required": true
         },
         {
           "key": "s4_opt1",
           "label": "pilihan opsi A",
-          "placeholder": "isi pilihan opsi a sesuai pesanan",
+          "placeholder": "someone else",
           "long": false,
-          "required": false
+          "required": true
         },
         {
           "key": "s4_resp1",
           "label": "balasan jika pilih A",
-          "placeholder": "isi balasan jika pilih a sesuai pesanan",
           "long": true,
-          "required": false
+          "placeholder": "someone else? really, yose? look a little closer.",
+          "required": true
         },
         {
           "key": "s4_opt2",
           "label": "pilihan opsi B",
-          "placeholder": "isi pilihan opsi b sesuai pesanan",
+          "placeholder": "probably me",
           "long": false,
-          "required": false
+          "required": true
         },
         {
           "key": "s4_resp2",
           "label": "balasan jika pilih B",
-          "placeholder": "isi balasan jika pilih b sesuai pesanan",
           "long": true,
-          "required": false
+          "placeholder": "yeah. you finally caught on. take a look.",
+          "required": true
         },
         {
           "key": "s4_opt3",
           "label": "pilihan opsi C",
-          "placeholder": "isi pilihan opsi c sesuai pesanan",
+          "placeholder": "i have no idea",
           "long": false,
-          "required": false
+          "required": true
         },
         {
           "key": "s4_resp3",
           "label": "balasan jika pilih C",
-          "placeholder": "isi balasan jika pilih c sesuai pesanan",
           "long": true,
-          "required": false
+          "placeholder": "don't play dumb with me. you know exactly who.",
+          "required": true
         },
         {
           "key": "s4_btn",
           "label": "button reveal",
-          "placeholder": "isi button reveal sesuai pesanan",
+          "placeholder": "look closer",
           "long": false,
-          "required": false
+          "required": true
         }
       ]
     },
@@ -311,44 +320,44 @@ window.FORM_CONFIG = {
         {
           "key": "s5_title",
           "label": "reveal headline",
-          "placeholder": "isi reveal headline sesuai pesanan",
+          "placeholder": "yeah. it's you.",
           "long": false,
-          "required": false
+          "required": true
         },
         {
           "key": "s5_note",
           "label": "pesan rahasia di dalam saku (hidden note layer)",
-          "placeholder": "isi pesan rahasia di dalam saku (hidden note layer) sesuai pesanan",
           "long": true,
-          "required": false
+          "placeholder": "and i've been meaning to tell you this for a while.",
+          "required": true
         },
         {
           "key": "s5_author",
           "label": "tanda tangan saku",
-          "placeholder": "isi tanda tangan saku sesuai pesanan",
+          "placeholder": "- samuel",
           "long": false,
-          "required": false
+          "required": true
         },
         {
           "key": "s5_caption",
           "label": "caption pita foto",
-          "placeholder": "isi caption pita foto sesuai pesanan",
+          "placeholder": "surprised?",
           "long": false,
-          "required": false
+          "required": true
         },
         {
           "key": "s5_hint",
           "label": "hint interaksi",
-          "placeholder": "isi hint interaksi sesuai pesanan",
+          "placeholder": "tap photo to pull note",
           "long": false,
-          "required": false
+          "required": true
         },
         {
           "key": "s5_btn",
           "label": "button continue",
-          "placeholder": "isi button continue sesuai pesanan",
+          "placeholder": "keep going",
           "long": false,
-          "required": false
+          "required": true
         }
       ]
     },
@@ -359,30 +368,30 @@ window.FORM_CONFIG = {
         {
           "key": "s6_p1",
           "label": "paragraf 1 (kerinduan & awal mula perasaan)",
-          "placeholder": "isi paragraf 1 (kerinduan & awal mula perasaan) sesuai pesanan",
           "long": true,
-          "required": false
+          "placeholder": "i tried to keep it to myself, i really did. but somehow you kept finding your way into my thoughts, and talking to you quietly became the one thing i looked forward to every single day.",
+          "required": true
         },
         {
           "key": "s6_p2",
           "label": "paragraf 2 (pengakuan tulus & alasan menyatakan rasa)",
-          "placeholder": "isi paragraf 2 (pengakuan tulus & alasan menyatakan rasa) sesuai pesanan",
           "long": true,
-          "required": false
+          "placeholder": "and somewhere along the way, i realized this wasn't just a little crush anymore. i really like you, yose. more than i probably know how to explain. so i thought... maybe it's time i finally stop keeping it to myself.",
+          "required": true
         },
         {
           "key": "s6_sign",
           "label": "letter sign off",
-          "placeholder": "isi letter sign off sesuai pesanan",
+          "placeholder": "- samuel",
           "long": false,
-          "required": false
+          "required": true
         },
         {
           "key": "s6_btn",
           "label": "button continue",
-          "placeholder": "isi button continue sesuai pesanan",
+          "placeholder": "continue",
           "long": false,
-          "required": false
+          "required": true
         }
       ]
     },
@@ -393,44 +402,44 @@ window.FORM_CONFIG = {
         {
           "key": "s7_title",
           "label": "headline scene 7",
-          "placeholder": "isi headline scene 7 sesuai pesanan",
+          "placeholder": "in case you needed a reminder.",
           "long": false,
-          "required": false
+          "required": true
         },
         {
           "key": "s7_hint",
           "label": "hint tap foto",
-          "placeholder": "isi hint tap foto sesuai pesanan",
+          "placeholder": "tap photo to see",
           "long": false,
-          "required": false
+          "required": true
         },
         {
           "key": "s7_line1",
           "label": "baris reaksi 1",
-          "placeholder": "isi baris reaksi 1 sesuai pesanan",
+          "placeholder": "yeah.",
           "long": false,
-          "required": false
+          "required": true
         },
         {
           "key": "s7_line2",
           "label": "baris reaksi 2",
-          "placeholder": "isi baris reaksi 2 sesuai pesanan",
+          "placeholder": "still you.",
           "long": false,
-          "required": false
+          "required": true
         },
         {
           "key": "s7_line3",
           "label": "baris reaksi 3",
-          "placeholder": "isi baris reaksi 3 sesuai pesanan",
+          "placeholder": "i wasn't joking about any of this.",
           "long": false,
-          "required": false
+          "required": true
         },
         {
           "key": "s7_btn",
           "label": "button continue to proposal",
-          "placeholder": "isi button continue to proposal sesuai pesanan",
+          "placeholder": "okay, no more clues",
           "long": false,
-          "required": false
+          "required": true
         }
       ]
     },
@@ -441,76 +450,67 @@ window.FORM_CONFIG = {
         {
           "key": "s8_pre",
           "label": "pre-title (sapaan hangat)",
-          "placeholder": "isi pre-title (sapaan hangat) sesuai pesanan",
+          "placeholder": "so, yose...",
           "long": false,
-          "required": false
+          "required": true
         },
         {
           "key": "s8_title",
           "label": "pertanyaan nembak utama",
-          "placeholder": "isi pertanyaan nembak utama sesuai pesanan",
+          "placeholder": "will you be mine?",
           "long": false,
-          "required": false
+          "required": true
         },
         {
           "key": "s8_yes_btn",
           "label": "label tombol YES",
-          "placeholder": "isi label tombol yes sesuai pesanan",
+          "placeholder": "yes, i will ♡",
           "long": false,
-          "required": false
+          "required": true
         },
         {
           "key": "s8_yes_title",
           "label": "judul reaksi jika klik YES",
-          "placeholder": "isi judul reaksi jika klik yes sesuai pesanan",
+          "placeholder": "yeah?",
           "long": false,
-          "required": false
+          "required": true
         },
         {
           "key": "s8_yes_note",
           "label": "pesan manis jika klik YES",
-          "placeholder": "isi pesan manis jika klik yes sesuai pesanan",
           "long": true,
-          "required": false
+          "placeholder": "okay, now you actually made me really happy.",
+          "required": true
         },
         {
           "key": "s8_no_btn",
           "label": "label tombol NO",
-          "placeholder": "isi label tombol no sesuai pesanan",
+          "placeholder": "no",
           "long": false,
-          "required": false
+          "required": true
         },
         {
           "key": "s8_no_title",
           "label": "judul reaksi jika klik NO",
-          "placeholder": "isi judul reaksi jika klik no sesuai pesanan",
+          "placeholder": "wait, really?",
           "long": false,
-          "required": false
+          "required": true
         },
         {
           "key": "s8_no_note",
           "label": "pesan jika klik NO",
-          "placeholder": "isi pesan jika klik no sesuai pesanan",
           "long": true,
-          "required": false
+          "placeholder": "are you sure about that?",
+          "required": true
         },
         {
           "key": "s8_footer",
           "label": "footer note",
-          "placeholder": "isi footer note sesuai pesanan",
+          "placeholder": "- samuel cliff",
           "long": false,
-          "required": false
+          "required": true
         }
       ]
     }
-  ],
-  "palette": [
-    "#0E090B",
-    "#1E1519",
-    "#F5F2EB",
-    "#A89895",
-    "#8C4A50",
-    "#FAF6EE"
-  ],
-  "price": 7000
+  ]
 };
