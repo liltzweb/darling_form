@@ -1,500 +1,516 @@
 window.FORM_CONFIG = {
-  product: {
-    code: 'ohmydarling',
-    name: 'ohmydarling',
-    badge: 'interactive stealth guessing game & love proposal',
-    price: 7000,
-    priceFormatted: 'Rp 7.000',
-    tagline: 'ohmydarling — interactive stealth 3-question guessing game, sliding keepsake photo reveal, handwritten letter, memory reminder, and runaway proposal with direct Telegram response.'
-  },
-  context: {
-    formCode: 'DARLING-ORD',
-    edition: '2026 Stealth Love Proposal Edition',
-    description: 'Ohmydarling is an interactive romantic guessing game featuring 3 stealth quiz questions with instant feedback replies, a sliding keepsake polaroid reveal, a 4-paragraph love letter, an interactive memory card, and an unforgettable runaway proposal where the No button dodges and Yes sends a direct prefilled Telegram message.'
-  },
-  motif: '💌',
-  mediaDescription: '5 Foto (3 Quiz Placeholders/Photos + 1 Keepsake Slide + 1 Memory Card) + 1 File Musik MP3',
-  theme: {
-    name: 'darling',
-    palette: ['#1A120B', '#2C1D11', '#E5A93C', '#FAF4EB', '#603813', '#D4813A']
-  },
-  sections: [
+  "source": "darling",
+  "repo": "darling_form",
+  "product": "ohmydarling",
+  "sourceForm": "darling.html",
+  "context": "stealth guessing game & proposal",
+  "motif": "?",
+  "media": "5 foto + 1 file musik MP3",
+  "theme": "darling",
+  "sections": [
     {
-      id: 'core_identity',
-      number: '02',
-      title: 'Core Identity & Chat Destination',
-      description: 'Names and destination Telegram link for instant response submission.',
-      fields: [
+      "id": "02",
+      "title": "core identity & chat destination",
+      "fields": [
         {
-          id: 'sender_name',
-          label: 'Sender Full Name (Yang Menembak / Menyatakan Perasaan)',
-          type: 'text',
-          placeholder: 'e.g. Arkan Narendra',
-          defaultValue: 'Arkan Narendra',
-          required: true,
-          helpText: 'Nama lengkap pengirim/pria yang menyatakan perasaan.'
+          "key": "sender_name",
+          "label": "sender full name (yang nembak / menyatakan perasaan)",
+          "placeholder": "isi sender full name (yang nembak / menyatakan perasaan) sesuai pesanan",
+          "long": false,
+          "required": false
         },
         {
-          id: 'sender_nickname',
-          label: 'Sender Nickname / First Name',
-          type: 'text',
-          placeholder: 'e.g. Arkan',
-          defaultValue: 'Arkan',
-          required: true,
-          helpText: 'Nama panggilan pengirim.'
+          "key": "sender_first",
+          "label": "sender nickname / first name",
+          "placeholder": "isi sender nickname / first name sesuai pesanan",
+          "long": false,
+          "required": false
         },
         {
-          id: 'recipient_name',
-          label: 'Recipient Full Name (Crush / Pasangan yang Ditembak)',
-          type: 'text',
-          placeholder: 'e.g. Kania Aurelia',
-          defaultValue: 'Kania Aurelia',
-          required: true,
-          helpText: 'Nama lengkap wanita/pasangan yang menerima.'
+          "key": "recipient_name",
+          "label": "recipient full name (crush yang mau ditembak)",
+          "placeholder": "isi recipient full name (crush yang mau ditembak) sesuai pesanan",
+          "long": false,
+          "required": false
         },
         {
-          id: 'recipient_nickname',
-          label: 'Recipient Nickname / First Name',
-          type: 'text',
-          placeholder: 'e.g. Kania',
-          defaultValue: 'Kania',
-          required: true,
-          helpText: 'Nama panggilan pasangan.'
+          "key": "recipient_first",
+          "label": "recipient nickname / first name",
+          "placeholder": "isi recipient nickname / first name sesuai pesanan",
+          "long": false,
+          "required": false
         },
         {
-          id: 'chat_destination',
-          label: 'Telegram Chat Destination Link',
-          type: 'text',
-          placeholder: 'e.g. https://t.me/mirssy atau username telegrammu',
-          defaultValue: 'https://t.me/mirssy',
-          required: true,
-          helpText: 'Link Telegram tujuan saat tombol Yes ditekan oleh pasangan.'
+          "key": "chat_destination",
+          "label": "chat destination link (link telegrammu agar jawaban crush otomatis terkirim)",
+          "placeholder": "isi chat destination link (link telegrammu agar jawaban crush otomatis terkirim) sesuai pesanan",
+          "long": false,
+          "required": false
         }
       ]
     },
     {
-      id: 'scene_01_entry',
-      number: '03',
-      title: 'Scene 01 — Opening (Stealth Guessing Game)',
-      description: 'Cover card opening the game without giving away the surprise.',
-      fields: [
+      "id": "03",
+      "title": "scene 1 — opening (stealth guessing game)",
+      "fields": [
         {
-          id: 's1_badge',
-          label: 'Top Pill Badge',
-          type: 'text',
-          placeholder: 'e.g. just a quick game',
-          defaultValue: 'just a quick game',
-          required: true
+          "key": "s1_badge",
+          "label": "top pill badge",
+          "placeholder": "isi top pill badge sesuai pesanan",
+          "long": false,
+          "required": false
         },
         {
-          id: 's1_title',
-          label: 'Opening Card Title',
-          type: 'text',
-          placeholder: 'e.g. hey. got a minute?',
-          defaultValue: 'hey. got a minute?',
-          required: true
+          "key": "s1_meta",
+          "label": "top right label (disamarkan jadi kuis santai)",
+          "placeholder": "isi top right label (disamarkan jadi kuis santai) sesuai pesanan",
+          "long": false,
+          "required": false
         },
         {
-          id: 's1_subtitle',
-          label: 'Opening Subtitle / Teaser Quote',
-          type: 'textarea',
-          placeholder: 'e.g. i made a little guessing game for you. 3 questions only.',
-          defaultValue: 'i made a little guessing game for you. 3 questions only.',
-          required: true
+          "key": "s1_row1",
+          "label": "headline baris 1 (rata kiri)",
+          "placeholder": "isi headline baris 1 (rata kiri) sesuai pesanan",
+          "long": false,
+          "required": false
         },
         {
-          id: 's1_button',
-          label: 'Start Game Button Label',
-          type: 'text',
-          placeholder: 'e.g. let's play',
-          defaultValue: 'let's play',
-          required: true
+          "key": "s1_row2",
+          "label": "headline baris 2 (tengah offset)",
+          "placeholder": "isi headline baris 2 (tengah offset) sesuai pesanan",
+          "long": false,
+          "required": false
+        },
+        {
+          "key": "s1_row3",
+          "label": "headline baris 3 (aksen kanan)",
+          "placeholder": "isi headline baris 3 (aksen kanan) sesuai pesanan",
+          "long": false,
+          "required": false
+        },
+        {
+          "key": "s1_lead",
+          "label": "opening note kalimat 1",
+          "placeholder": "isi opening note kalimat 1 sesuai pesanan",
+          "long": true,
+          "required": false
+        },
+        {
+          "key": "s1_sub",
+          "label": "opening note kalimat 2",
+          "placeholder": "isi opening note kalimat 2 sesuai pesanan",
+          "long": true,
+          "required": false
+        },
+        {
+          "key": "s1_btn",
+          "label": "start button label",
+          "placeholder": "isi start button label sesuai pesanan",
+          "long": false,
+          "required": false
+        },
+        {
+          "key": "s1_signature",
+          "label": "opening signature",
+          "placeholder": "isi opening signature sesuai pesanan",
+          "long": false,
+          "required": false
         }
       ]
     },
     {
-      id: 'scene_02_q1',
-      number: '04',
-      title: 'Scene 02 — Question 01 (Thinking of You)',
-      description: 'First interactive question with multiple choices and instant feedback.',
-      fields: [
+      "id": "04",
+      "title": "scene 2 — question 1 & interactive reply",
+      "fields": [
         {
-          id: 's2_heading',
-          label: 'Question 01 Heading',
-          type: 'text',
-          placeholder: 'e.g. who do you think has been thinking about you lately?',
-          defaultValue: 'who do you think has been thinking about you lately?',
-          required: true
+          "key": "s2_title",
+          "label": "pertanyaan 1",
+          "placeholder": "isi pertanyaan 1 sesuai pesanan",
+          "long": false,
+          "required": false
         },
         {
-          id: 's2_choice_a',
-          label: 'Choice A',
-          type: 'text',
-          placeholder: 'e.g. someone mysterious',
-          defaultValue: 'someone mysterious',
-          required: true
+          "key": "s2_opt1",
+          "label": "pilihan opsi A",
+          "placeholder": "isi pilihan opsi a sesuai pesanan",
+          "long": false,
+          "required": false
         },
         {
-          id: 's2_choice_b',
-          label: 'Choice B',
-          type: 'text',
-          placeholder: 'e.g. my secret admirer',
-          defaultValue: 'my secret admirer',
-          required: true
+          "key": "s2_resp1",
+          "label": "balasan jika pilih A",
+          "placeholder": "isi balasan jika pilih a sesuai pesanan",
+          "long": true,
+          "required": false
         },
         {
-          id: 's2_choice_c',
-          label: 'Choice C (Target Answer)',
-          type: 'text',
-          placeholder: 'e.g. probably you lol',
-          defaultValue: 'probably you lol',
-          required: true
+          "key": "s2_opt2",
+          "label": "pilihan opsi B",
+          "placeholder": "isi pilihan opsi b sesuai pesanan",
+          "long": false,
+          "required": false
         },
         {
-          id: 's2_feedback',
-          label: 'Feedback Reply Text',
-          type: 'textarea',
-          placeholder: 'e.g. you guessed it. it's been me all along.',
-          defaultValue: 'you guessed it. it's been me all along.',
-          required: true
+          "key": "s2_resp2",
+          "label": "balasan jika pilih B",
+          "placeholder": "isi balasan jika pilih b sesuai pesanan",
+          "long": true,
+          "required": false
         },
         {
-          id: 's2_button',
-          label: 'Next Question Button Label',
-          type: 'text',
-          placeholder: 'e.g. next question',
-          defaultValue: 'next question',
-          required: true
+          "key": "s2_opt3",
+          "label": "pilihan opsi C",
+          "placeholder": "isi pilihan opsi c sesuai pesanan",
+          "long": false,
+          "required": false
+        },
+        {
+          "key": "s2_resp3",
+          "label": "balasan jika pilih C",
+          "placeholder": "isi balasan jika pilih c sesuai pesanan",
+          "long": true,
+          "required": false
+        },
+        {
+          "key": "s2_btn",
+          "label": "button next question",
+          "placeholder": "isi button next question sesuai pesanan",
+          "long": false,
+          "required": false
         }
       ]
     },
     {
-      id: 'scene_03_q2',
-      number: '05',
-      title: 'Scene 03 — Question 02 (Wanting to Do)',
-      description: 'Second interactive question building up anticipation.',
-      fields: [
+      "id": "05",
+      "title": "scene 3 — question 2 & interactive reply",
+      "fields": [
         {
-          id: 's3_heading',
-          label: 'Question 02 Heading',
-          type: 'text',
-          placeholder: 'e.g. what do you think i've been wanting to do lately?',
-          defaultValue: 'what do you think i've been wanting to do lately?',
-          required: true
+          "key": "s3_title",
+          "label": "pertanyaan 2",
+          "placeholder": "isi pertanyaan 2 sesuai pesanan",
+          "long": false,
+          "required": false
         },
         {
-          id: 's3_choice_a',
-          label: 'Choice A',
-          type: 'text',
-          placeholder: 'e.g. take you out on a proper date',
-          defaultValue: 'take you out on a proper date',
-          required: true
+          "key": "s3_opt1",
+          "label": "pilihan opsi A",
+          "placeholder": "isi pilihan opsi a sesuai pesanan",
+          "long": false,
+          "required": false
         },
         {
-          id: 's3_choice_b',
-          label: 'Choice B',
-          type: 'text',
-          placeholder: 'e.g. confess something important',
-          defaultValue: 'confess something important',
-          required: true
+          "key": "s3_resp1",
+          "label": "balasan jika pilih A",
+          "placeholder": "isi balasan jika pilih a sesuai pesanan",
+          "long": true,
+          "required": false
         },
         {
-          id: 's3_choice_c',
-          label: 'Choice C (Target Answer)',
-          type: 'text',
-          placeholder: 'e.g. both of the above',
-          defaultValue: 'both of the above',
-          required: true
+          "key": "s3_opt2",
+          "label": "pilihan opsi B",
+          "placeholder": "isi pilihan opsi b sesuai pesanan",
+          "long": false,
+          "required": false
         },
         {
-          id: 's3_feedback',
-          label: 'Feedback Reply Text',
-          type: 'textarea',
-          placeholder: 'e.g. bingo. i've been holding this in for a while.',
-          defaultValue: 'bingo. i've been holding this in for a while.',
-          required: true
+          "key": "s3_resp2",
+          "label": "balasan jika pilih B",
+          "placeholder": "isi balasan jika pilih b sesuai pesanan",
+          "long": true,
+          "required": false
         },
         {
-          id: 's3_button',
-          label: 'Next Question Button Label',
-          type: 'text',
-          placeholder: 'e.g. one last question',
-          defaultValue: 'one last question',
-          required: true
+          "key": "s3_opt3",
+          "label": "pilihan opsi C",
+          "placeholder": "isi pilihan opsi c sesuai pesanan",
+          "long": false,
+          "required": false
+        },
+        {
+          "key": "s3_resp3",
+          "label": "balasan jika pilih C",
+          "placeholder": "isi balasan jika pilih c sesuai pesanan",
+          "long": true,
+          "required": false
+        },
+        {
+          "key": "s3_btn",
+          "label": "button next question",
+          "placeholder": "isi button next question sesuai pesanan",
+          "long": false,
+          "required": false
         }
       ]
     },
     {
-      id: 'scene_04_q3',
-      number: '06',
-      title: 'Scene 04 — Question 03 (Who is this about)',
-      description: 'Final question right before the romantic photo reveal.',
-      fields: [
+      "id": "06",
+      "title": "scene 4 — question 3 (the realization)",
+      "fields": [
         {
-          id: 's4_heading',
-          label: 'Question 03 Heading',
-          type: 'text',
-          placeholder: 'e.g. who do you think this whole thing is about?',
-          defaultValue: 'who do you think this whole thing is about?',
-          required: true
+          "key": "s4_title",
+          "label": "pertanyaan 3 (mulai sadar)",
+          "placeholder": "isi pertanyaan 3 (mulai sadar) sesuai pesanan",
+          "long": false,
+          "required": false
         },
         {
-          id: 's4_choice_a',
-          label: 'Choice A',
-          type: 'text',
-          placeholder: 'e.g. someone pretty',
-          defaultValue: 'someone pretty',
-          required: true
+          "key": "s4_opt1",
+          "label": "pilihan opsi A",
+          "placeholder": "isi pilihan opsi a sesuai pesanan",
+          "long": false,
+          "required": false
         },
         {
-          id: 's4_choice_b',
-          label: 'Choice B',
-          type: 'text',
-          placeholder: 'e.g. the prettiest girl i know',
-          defaultValue: 'the prettiest girl i know',
-          required: true
+          "key": "s4_resp1",
+          "label": "balasan jika pilih A",
+          "placeholder": "isi balasan jika pilih a sesuai pesanan",
+          "long": true,
+          "required": false
         },
         {
-          id: 's4_choice_c',
-          label: 'Choice C (Target Answer)',
-          type: 'text',
-          placeholder: 'e.g. you, obviously',
-          defaultValue: 'you, obviously',
-          required: true
+          "key": "s4_opt2",
+          "label": "pilihan opsi B",
+          "placeholder": "isi pilihan opsi b sesuai pesanan",
+          "long": false,
+          "required": false
         },
         {
-          id: 's4_feedback',
-          label: 'Feedback Reply Text',
-          type: 'textarea',
-          placeholder: 'e.g. smart girl. let me show you.',
-          defaultValue: 'smart girl. let me show you.',
-          required: true
+          "key": "s4_resp2",
+          "label": "balasan jika pilih B",
+          "placeholder": "isi balasan jika pilih b sesuai pesanan",
+          "long": true,
+          "required": false
         },
         {
-          id: 's4_button',
-          label: 'Reveal Button Label',
-          type: 'text',
-          placeholder: 'e.g. see who it is',
-          defaultValue: 'see who it is',
-          required: true
+          "key": "s4_opt3",
+          "label": "pilihan opsi C",
+          "placeholder": "isi pilihan opsi c sesuai pesanan",
+          "long": false,
+          "required": false
+        },
+        {
+          "key": "s4_resp3",
+          "label": "balasan jika pilih C",
+          "placeholder": "isi balasan jika pilih c sesuai pesanan",
+          "long": true,
+          "required": false
+        },
+        {
+          "key": "s4_btn",
+          "label": "button reveal",
+          "placeholder": "isi button reveal sesuai pesanan",
+          "long": false,
+          "required": false
         }
       ]
     },
     {
-      id: 'scene_05_reveal',
-      number: '07',
-      title: 'Scene 05 — Keepsake Photo Reveal',
-      description: 'Interactive sliding photo frame revealing her portrait and caption.',
-      fields: [
+      "id": "07",
+      "title": "scene 5 — keepsake slide photo (the first reveal)",
+      "fields": [
         {
-          id: 's5_heading',
-          label: 'Reveal Heading',
-          type: 'text',
-          placeholder: 'e.g. yeah. it's you.',
-          defaultValue: 'yeah. it's you.',
-          required: true
+          "key": "s5_title",
+          "label": "reveal headline",
+          "placeholder": "isi reveal headline sesuai pesanan",
+          "long": false,
+          "required": false
         },
         {
-          id: 's5_caption',
-          label: 'Keepsake Photo Caption',
-          type: 'textarea',
-          placeholder: 'e.g. the exact moment i realized i was completely down bad for you.',
-          defaultValue: 'the exact moment i realized i was completely down bad for you.',
-          required: true
+          "key": "s5_note",
+          "label": "pesan rahasia di dalam saku (hidden note layer)",
+          "placeholder": "isi pesan rahasia di dalam saku (hidden note layer) sesuai pesanan",
+          "long": true,
+          "required": false
         },
         {
-          id: 's5_frame_note',
-          label: 'Frame Tap Hint',
-          type: 'text',
-          placeholder: 'e.g. tap the frame to slide open',
-          defaultValue: 'tap the frame to slide open',
-          required: true
+          "key": "s5_author",
+          "label": "tanda tangan saku",
+          "placeholder": "isi tanda tangan saku sesuai pesanan",
+          "long": false,
+          "required": false
         },
         {
-          id: 's5_button',
-          label: 'Read Letter Button Label',
-          type: 'text',
-          placeholder: 'e.g. read what i wrote',
-          defaultValue: 'read what i wrote',
-          required: true
+          "key": "s5_caption",
+          "label": "caption pita foto",
+          "placeholder": "isi caption pita foto sesuai pesanan",
+          "long": false,
+          "required": false
+        },
+        {
+          "key": "s5_hint",
+          "label": "hint interaksi",
+          "placeholder": "isi hint interaksi sesuai pesanan",
+          "long": false,
+          "required": false
+        },
+        {
+          "key": "s5_btn",
+          "label": "button continue",
+          "placeholder": "isi button continue sesuai pesanan",
+          "long": false,
+          "required": false
         }
       ]
     },
     {
-      id: 'scene_06_letter',
-      number: '08',
-      title: 'Scene 06 — Handwritten Love Letter',
-      description: '4-paragraph personal letter expressing deep genuine feelings.',
-      fields: [
+      "id": "08",
+      "title": "scene 6 — sincere confession letter (2 paragraf)",
+      "fields": [
         {
-          id: 's6_salutation',
-          label: 'Letter Salutation',
-          type: 'text',
-          placeholder: 'e.g. dear kania,',
-          defaultValue: 'dear kania,',
-          required: true
+          "key": "s6_p1",
+          "label": "paragraf 1 (kerinduan & awal mula perasaan)",
+          "placeholder": "isi paragraf 1 (kerinduan & awal mula perasaan) sesuai pesanan",
+          "long": true,
+          "required": false
         },
         {
-          id: 's6_para_1',
-          label: 'Letter Paragraph 01',
-          type: 'textarea',
-          placeholder: 'e.g. i've been trying to find the right words to tell you this for what feels like forever...',
-          defaultValue: 'i've been trying to find the right words to tell you this for what feels like forever. every time we talk, every time you send me a voice note or give me that soft little smile, i find myself falling a little harder.',
-          required: true
+          "key": "s6_p2",
+          "label": "paragraf 2 (pengakuan tulus & alasan menyatakan rasa)",
+          "placeholder": "isi paragraf 2 (pengakuan tulus & alasan menyatakan rasa) sesuai pesanan",
+          "long": true,
+          "required": false
         },
         {
-          id: 's6_para_2',
-          label: 'Letter Paragraph 02',
-          type: 'textarea',
-          placeholder: 'e.g. you make the simplest ordinary days feel exciting and safe...',
-          defaultValue: 'you make the simplest ordinary days feel exciting and safe. i never believed in people becoming someone's favorite comfort place until you became mine.',
-          required: true
+          "key": "s6_sign",
+          "label": "letter sign off",
+          "placeholder": "isi letter sign off sesuai pesanan",
+          "long": false,
+          "required": false
         },
         {
-          id: 's6_para_3',
-          label: 'Letter Paragraph 03',
-          type: 'textarea',
-          placeholder: 'e.g. i don't just want random late night calls; i want all of your days...',
-          defaultValue: 'i don't just want random late night calls; i want all of your days. the good ones, the exhausting ones, the ones where you just need someone to listen without judging.',
-          required: true
-        },
-        {
-          id: 's6_para_4',
-          label: 'Letter Paragraph 04',
-          type: 'textarea',
-          placeholder: 'e.g. so here i am, laying all my cards on the table...',
-          defaultValue: 'so here i am, laying all my cards on the table. no more stealth games, just honest feelings from me to you.',
-          required: true
-        },
-        {
-          id: 's6_signoff',
-          label: 'Letter Sign-off',
-          type: 'text',
-          placeholder: 'e.g. with all my heart, arkan',
-          defaultValue: 'with all my heart, arkan',
-          required: true
-        },
-        {
-          id: 's6_button',
-          label: 'Continue Button Label',
-          type: 'text',
-          placeholder: 'e.g. there's one more thing',
-          defaultValue: 'there's one more thing',
-          required: true
+          "key": "s6_btn",
+          "label": "button continue",
+          "placeholder": "isi button continue sesuai pesanan",
+          "long": false,
+          "required": false
         }
       ]
     },
     {
-      id: 'scene_07_memory',
-      number: '09',
-      title: 'Scene 07 — Memory Reminder Card',
-      description: 'Second romantic photo card with interactive tap reaction.',
-      fields: [
+      "id": "09",
+      "title": "scene 7 — memory focus (illuminated reminder)",
+      "fields": [
         {
-          id: 's7_heading',
-          label: 'Memory Heading',
-          type: 'text',
-          placeholder: 'e.g. in case you needed a reminder.',
-          defaultValue: 'in case you needed a reminder.',
-          required: true
+          "key": "s7_title",
+          "label": "headline scene 7",
+          "placeholder": "isi headline scene 7 sesuai pesanan",
+          "long": false,
+          "required": false
         },
         {
-          id: 's7_photo_caption',
-          label: 'Memory Photo Caption',
-          type: 'textarea',
-          placeholder: 'e.g. every little moment with you feels like my favorite movie scene.',
-          defaultValue: 'every little moment with you feels like my favorite movie scene.',
-          required: true
+          "key": "s7_hint",
+          "label": "hint tap foto",
+          "placeholder": "isi hint tap foto sesuai pesanan",
+          "long": false,
+          "required": false
         },
         {
-          id: 's7_tap_note',
-          label: 'Photo Tap Hint',
-          type: 'text',
-          placeholder: 'e.g. tap the photo to reveal my favorite thought',
-          defaultValue: 'tap the photo to reveal my favorite thought',
-          required: true
+          "key": "s7_line1",
+          "label": "baris reaksi 1",
+          "placeholder": "isi baris reaksi 1 sesuai pesanan",
+          "long": false,
+          "required": false
         },
         {
-          id: 's7_hidden_reaction',
-          label: 'Hidden Reaction Message',
-          type: 'textarea',
-          placeholder: 'e.g. i really, really like you. more than words could ever explain.',
-          defaultValue: 'i really, really like you. more than words could ever explain.',
-          required: true
+          "key": "s7_line2",
+          "label": "baris reaksi 2",
+          "placeholder": "isi baris reaksi 2 sesuai pesanan",
+          "long": false,
+          "required": false
         },
         {
-          id: 's7_button',
-          label: 'Proposal Question Button Label',
-          type: 'text',
-          placeholder: 'e.g. the real question',
-          defaultValue: 'the real question',
-          required: true
+          "key": "s7_line3",
+          "label": "baris reaksi 3",
+          "placeholder": "isi baris reaksi 3 sesuai pesanan",
+          "long": false,
+          "required": false
+        },
+        {
+          "key": "s7_btn",
+          "label": "button continue to proposal",
+          "placeholder": "isi button continue to proposal sesuai pesanan",
+          "long": false,
+          "required": false
         }
       ]
     },
     {
-      id: 'scene_08_proposal',
-      number: '10',
-      title: 'Scene 08 — Proposal & Yes/No Runaway Outcome',
-      description: 'The final proposal scene with runaway No button and Telegram response link.',
-      fields: [
+      "id": "10",
+      "title": "scene 8 — the proposal (pas nembak)",
+      "fields": [
         {
-          id: 's8_heading',
-          label: 'Proposal Question Heading',
-          type: 'text',
-          placeholder: 'e.g. will you be mine?',
-          defaultValue: 'will you be mine?',
-          required: true
+          "key": "s8_pre",
+          "label": "pre-title (sapaan hangat)",
+          "placeholder": "isi pre-title (sapaan hangat) sesuai pesanan",
+          "long": false,
+          "required": false
         },
         {
-          id: 's8_subtitle',
-          label: 'Proposal Subtitle',
-          type: 'textarea',
-          placeholder: 'e.g. i don't want anyone else. just you.',
-          defaultValue: 'i don't want anyone else. just you.',
-          required: true
+          "key": "s8_title",
+          "label": "pertanyaan nembak utama",
+          "placeholder": "isi pertanyaan nembak utama sesuai pesanan",
+          "long": false,
+          "required": false
         },
         {
-          id: 's8_yes_label',
-          label: 'Yes Button Text',
-          type: 'text',
-          placeholder: 'e.g. yes, absolutely!',
-          defaultValue: 'yes, absolutely!',
-          required: true
+          "key": "s8_yes_btn",
+          "label": "label tombol YES",
+          "placeholder": "isi label tombol yes sesuai pesanan",
+          "long": false,
+          "required": false
         },
         {
-          id: 's8_no_label',
-          label: 'No Button Text (Runaway Button)',
-          type: 'text',
-          placeholder: 'e.g. no (try clicking me)',
-          defaultValue: 'no (try clicking me)',
-          required: true
+          "key": "s8_yes_title",
+          "label": "judul reaksi jika klik YES",
+          "placeholder": "isi judul reaksi jika klik yes sesuai pesanan",
+          "long": false,
+          "required": false
         },
         {
-          id: 's8_outcome_title',
-          label: 'Success Outcome Heading',
-          type: 'text',
-          placeholder: 'e.g. she said yes!',
-          defaultValue: 'she said yes!',
-          required: true
+          "key": "s8_yes_note",
+          "label": "pesan manis jika klik YES",
+          "placeholder": "isi pesan manis jika klik yes sesuai pesanan",
+          "long": true,
+          "required": false
         },
         {
-          id: 's8_outcome_msg',
-          label: 'Success Outcome Message',
-          type: 'textarea',
-          placeholder: 'e.g. best decision ever. let's tell arkan right away!',
-          defaultValue: 'best decision ever. let's tell arkan right away!',
-          required: true
+          "key": "s8_no_btn",
+          "label": "label tombol NO",
+          "placeholder": "isi label tombol no sesuai pesanan",
+          "long": false,
+          "required": false
         },
         {
-          id: 's8_reply_btn',
-          label: 'Direct Telegram Action Button Text',
-          type: 'text',
-          placeholder: 'e.g. send answer to arkan',
-          defaultValue: 'send answer to arkan',
-          required: true
+          "key": "s8_no_title",
+          "label": "judul reaksi jika klik NO",
+          "placeholder": "isi judul reaksi jika klik no sesuai pesanan",
+          "long": false,
+          "required": false
+        },
+        {
+          "key": "s8_no_note",
+          "label": "pesan jika klik NO",
+          "placeholder": "isi pesan jika klik no sesuai pesanan",
+          "long": true,
+          "required": false
+        },
+        {
+          "key": "s8_footer",
+          "label": "footer note",
+          "placeholder": "isi footer note sesuai pesanan",
+          "long": false,
+          "required": false
         }
       ]
     }
-  ]
+  ],
+  "palette": [
+    "#0E090B",
+    "#1E1519",
+    "#F5F2EB",
+    "#A89895",
+    "#8C4A50",
+    "#FAF6EE"
+  ],
+  "price": 7000
 };
