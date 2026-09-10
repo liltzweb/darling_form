@@ -51,10 +51,10 @@ window.FORM_CONFIG = {
         },
         {
           "key": "chat_destination",
-          "label": "chat destination link (link telegrammu agar jawaban crush otomatis terkirim)",
+          "label": "chat destination link (link telegrammu)",
           "placeholder": "https://t.me/mirssy",
           "long": false,
-          "required": true
+          "required": false
         }
       ]
     },
@@ -100,15 +100,15 @@ window.FORM_CONFIG = {
         {
           "key": "s1_lead",
           "label": "opening note kalimat 1",
-          "long": true,
           "placeholder": "i put together a little guessing game for you tonight.",
+          "long": true,
           "required": true
         },
         {
           "key": "s1_sub",
           "label": "opening note kalimat 2",
-          "long": true,
           "placeholder": "answer three quick questions and let's see how many you get right. ready?",
+          "long": true,
           "required": true
         },
         {
@@ -148,8 +148,8 @@ window.FORM_CONFIG = {
         {
           "key": "s2_resp1",
           "label": "balasan jika pilih A",
-          "long": true,
           "placeholder": "good guess, but not quite. try someone a little closer to you right now.",
+          "long": true,
           "required": true
         },
         {
@@ -162,8 +162,8 @@ window.FORM_CONFIG = {
         {
           "key": "s2_resp2",
           "label": "balasan jika pilih B",
-          "long": true,
           "placeholder": "technically true. you're definitely getting warmer.",
+          "long": true,
           "required": true
         },
         {
@@ -176,8 +176,8 @@ window.FORM_CONFIG = {
         {
           "key": "s2_resp3",
           "label": "balasan jika pilih C",
-          "long": true,
           "placeholder": "secret? maybe not for much longer. keep that thought in mind.",
+          "long": true,
           "required": true
         },
         {
@@ -210,8 +210,8 @@ window.FORM_CONFIG = {
         {
           "key": "s3_resp1",
           "label": "balasan jika pilih A",
-          "long": true,
           "placeholder": "close. i always want to talk to you. but that's not the whole thing.",
+          "long": true,
           "required": true
         },
         {
@@ -224,8 +224,8 @@ window.FORM_CONFIG = {
         {
           "key": "s3_resp2",
           "label": "balasan jika pilih B",
-          "long": true,
           "placeholder": "very close, actually. but there's something bigger.",
+          "long": true,
           "required": true
         },
         {
@@ -238,8 +238,8 @@ window.FORM_CONFIG = {
         {
           "key": "s3_resp3",
           "label": "balasan jika pilih C",
-          "long": true,
           "placeholder": "spot on. and i've been holding it in for quite a while.",
+          "long": true,
           "required": true
         },
         {
@@ -272,8 +272,8 @@ window.FORM_CONFIG = {
         {
           "key": "s4_resp1",
           "label": "balasan jika pilih A",
-          "long": true,
           "placeholder": "someone else? really, yose? look a little closer.",
+          "long": true,
           "required": true
         },
         {
@@ -286,8 +286,8 @@ window.FORM_CONFIG = {
         {
           "key": "s4_resp2",
           "label": "balasan jika pilih B",
-          "long": true,
           "placeholder": "yeah. you finally caught on. take a look.",
+          "long": true,
           "required": true
         },
         {
@@ -300,8 +300,8 @@ window.FORM_CONFIG = {
         {
           "key": "s4_resp3",
           "label": "balasan jika pilih C",
-          "long": true,
           "placeholder": "don't play dumb with me. you know exactly who.",
+          "long": true,
           "required": true
         },
         {
@@ -327,8 +327,8 @@ window.FORM_CONFIG = {
         {
           "key": "s5_note",
           "label": "pesan rahasia di dalam saku (hidden note layer)",
-          "long": true,
           "placeholder": "and i've been meaning to tell you this for a while.",
+          "long": true,
           "required": true
         },
         {
@@ -368,15 +368,15 @@ window.FORM_CONFIG = {
         {
           "key": "s6_p1",
           "label": "paragraf 1 (kerinduan & awal mula perasaan)",
-          "long": true,
           "placeholder": "i tried to keep it to myself, i really did. but somehow you kept finding your way into my thoughts, and talking to you quietly became the one thing i looked forward to every single day.",
+          "long": true,
           "required": true
         },
         {
           "key": "s6_p2",
           "label": "paragraf 2 (pengakuan tulus & alasan menyatakan rasa)",
-          "long": true,
           "placeholder": "and somewhere along the way, i realized this wasn't just a little crush anymore. i really like you, yose. more than i probably know how to explain. so i thought... maybe it's time i finally stop keeping it to myself.",
+          "long": true,
           "required": true
         },
         {
@@ -456,58 +456,71 @@ window.FORM_CONFIG = {
         },
         {
           "key": "s8_title",
-          "label": "pertanyaan nembak utama",
+          "label": "pertanyaan utama nembak",
           "placeholder": "will you be mine?",
           "long": false,
           "required": true
         },
         {
-          "key": "s8_yes_btn",
-          "label": "label tombol YES",
-          "placeholder": "yes, i will ♡",
+          "key": "s8_btn_yes",
+          "label": "label tombol Yes",
+          "placeholder": "yes, i'd love that",
           "long": false,
           "required": true
         },
         {
-          "key": "s8_yes_title",
-          "label": "judul reaksi jika klik YES",
-          "placeholder": "yeah?",
+          "key": "s8_btn_no",
+          "label": "label tombol No",
+          "placeholder": "let me think about it",
+          "long": false,
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "title": "scene 9 — ending & responses (yes & no)",
+      "fields": [
+        {
+          "key": "s9_yes_title",
+          "label": "headline saat dia klik Yes",
+          "placeholder": "you just made my whole year.",
           "long": false,
           "required": true
         },
         {
-          "key": "s8_yes_note",
-          "label": "pesan manis jika klik YES",
+          "key": "s9_yes_msg",
+          "label": "pesan manis saat dia klik Yes",
+          "placeholder": "thank you for giving us a chance. i promise to make it worth every single moment.",
           "long": true,
-          "placeholder": "okay, now you actually made me really happy.",
           "required": true
         },
         {
-          "key": "s8_no_btn",
-          "label": "label tombol NO",
-          "placeholder": "no",
-          "long": false,
-          "required": true
-        },
-        {
-          "key": "s8_no_title",
-          "label": "judul reaksi jika klik NO",
-          "placeholder": "wait, really?",
-          "long": false,
-          "required": true
-        },
-        {
-          "key": "s8_no_note",
-          "label": "pesan jika klik NO",
+          "key": "s9_yes_copy",
+          "label": "auto-copy pesan Yes ke Telegram",
+          "placeholder": "YES, I'M YOURS - from Yose Earthine",
           "long": true,
-          "placeholder": "are you sure about that?",
           "required": true
         },
         {
-          "key": "s8_footer",
-          "label": "footer note",
-          "placeholder": "- samuel cliff",
+          "key": "s9_no_title",
+          "label": "headline saat dia klik No / Think",
+          "placeholder": "no rush, ever.",
           "long": false,
+          "required": true
+        },
+        {
+          "key": "s9_no_msg",
+          "label": "pesan pengertian saat dia klik No / Think",
+          "placeholder": "take all the time you need. my feelings for you aren't going anywhere.",
+          "long": true,
+          "required": true
+        },
+        {
+          "key": "s9_no_copy",
+          "label": "auto-copy pesan No ke Telegram",
+          "placeholder": "I'M SORRY, NO - from Yose Earthine",
+          "long": true,
           "required": true
         }
       ]
