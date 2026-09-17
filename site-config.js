@@ -52,7 +52,7 @@ window.FORM_CONFIG = {
         {
           "key": "chat_destination",
           "label": "chat destination link (link telegrammu)",
-          "placeholder": "https://t.me/mirssy",
+          "placeholder": "https://t.me/reeumen",
           "long": false,
           "required": false
         }
